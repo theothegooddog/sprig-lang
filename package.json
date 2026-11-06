@@ -1,0 +1,18 @@
+{
+  "name": "sprigc",
+  "version": "0.3.0",
+  "description": "Sprig: a SwiftUI-style language for the web, and sprigc, its compiler.",
+  "bin": { "sprigc": "bin/sprigc.js" },
+  "main": "lib/compiler.js",
+  "files": ["bin", "lib", "examples", "README.md", "LICENSE"],
+  "engines": { "node": ">=16" },
+  "scripts": {
+    "build": "node build.js",
+    "binaries": "node build.js --binaries",
+    "test": "node bin/sprigc.js examples/counter.spg --check && node bin/sprigc.js examples/habits.spg --check && node bin/sprigc.js examples/fruit-stand.spg --check"
+  },
+  "optionalDependencies": { "jsdom": "^24.0.0" },
+  "repository": { "type": "git", "url": "https://github.com/theothegooddog/sprig.git" },
+  "keywords": ["sprig", "swiftui", "compiler", "web"],
+  "license": "MIT"
+}
